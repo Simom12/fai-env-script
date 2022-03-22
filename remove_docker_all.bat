@@ -1,5 +1,15 @@
 @rem dockerを止めてコンテナ削除、イメージ削除する.
 
+taskkill /F /IM AIManagedService.exe /T
+
+timeout /t 5 /nobreak >nul
+
+del /f C:\FWExtractorTools\AIManagedService\AIManagedService.exe /q
+del /f C:\FWExtractorTools\AIManagedService\* /q
+
+RMDIR C:\FWExtractorTools /s /q
+
+
 @rem ----------------------------------------------------->
 @rem docker contenar stop
 docker stop ascari

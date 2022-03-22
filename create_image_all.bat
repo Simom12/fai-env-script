@@ -58,5 +58,6 @@ cd fai-env-script
 copy /y load_image_all.bat ..\02_docker_release_image\%1
 copy /y remove_docker_all.bat ..\02_docker_release_image\%1
 copy /y boot_all.bat ..\02_docker_release_image\%1
+copy /y execute_total_deploy.bat ..\02_docker_release_image\%1
 @rem -----------------------------------------------------<
 
